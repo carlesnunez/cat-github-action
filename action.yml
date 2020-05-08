@@ -1,10 +1,15 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: "Giphy troller"
+description: "Put a gif on a pr is opened"
+branding:
+  icon: 'package'  
+  color: 'black'
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+  repo-token: 
+    description: "Github token secret"
+    required: true
+  giphy-token:
+    description: "Giphy token secret"
+    required: true
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node12"
+  main: "dist/index.js"
